@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "rhood"
+version = "0.1.0"
+description = ""
+authors = ["Eugene Park <eugenepark3@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+tox = "^4.11.3"
+pytest = "^7.4.2"
+black = "^23.10.0"
+
+[tool.black]
+line-length = 120
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
